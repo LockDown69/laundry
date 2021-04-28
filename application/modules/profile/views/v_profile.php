@@ -9,19 +9,19 @@
     <?php foreach( $getProfile->result() as $res ){ ?>
     <div class="mb-3">
     <label>Username</label>
-          <input class="form-control form-control-lg" disabled type="text" value="<?php echo $res->username;?>">
+          <input class="form-control form-control-lg" readonly type="text" value="<?php echo $res->username;?>">
         </div>
         <div class="mb-3">
         <label>Nama</label>
-          <input class="form-control form-control-lg" disabled type="text" value="<?php echo $res->nama;?>">
+          <input class="form-control form-control-lg" readonly type="text" value="<?php echo $res->nama;?>">
         </div>
         <div class="mb-3">
         <label>Alamat</label>
-          <input class="form-control form-control-lg" disabled type="text" value="<?php echo $res->alamat;?>">
+          <input class="form-control form-control-lg" readonly type="text" value="<?php echo $res->alamat;?>">
         </div>
         <div class="mb-3">
         <label>No Telepon</label>
-          <input class="form-control form-control-lg" disabled type="text" value="<?php echo $res->no_tlp;?>">
+          <input class="form-control form-control-lg" readonly type="text" value="<?php echo $res->no_tlp;?>">
         </div>
 
         <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -47,10 +47,6 @@
             <input type="text" class="form-control" id="username" name="username" value="<?php echo $res->username;?>">
           </div>
 
-          <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" name="password" value="<?php echo $res->username;?>">
-          </div>
                   <div class="mb-3">
                   <label for="nama" class="form-label">Nama Kasir</label>
                   <input type="text" class="form-control" id="nama" name="nama"
